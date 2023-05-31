@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=7, initial-scale=1.0">
-    <title>E-Banking</title>
+    <!-- gabriel -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eBanking Dashboard</title>
+  <!-- bootstrap ref hier-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  <!-- css stylesheet here-->
+  <link rel="stylesheet" href="style-gabriel.css">
 </head>
 <body>
-    
-</body>
-</html>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">eBanking</a>
+    <!--https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles  für die registernavigation geiler scheiss!-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accounts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Transactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+        </ul>
+    </div>
+    <div class="col-md-9 main-content">
+      <h1>Welcome to your eBanking Dashboard</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Account Balance</h5>
+              <p class="card-text">10,000.00 CHF</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Recent Transactions</h5>
+              <ul class="list-group">
+                <li class="list-group-item">Deposit - 1,000.00 CHF</li>
+                <li class="list-group-item">Withdrawal - 500.00 CHF</li>
+                <li class="list-group-item">Transfer - 2,000.00 CHF</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <h2>Recent Transactions</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">May 28, 2023</th>
+            <td>Deposit</td>
+            <td>1,000.00 CHF</td>
+          </tr>
+          <tr>
+            <th scope="row">May 27, 2023</th>
+            <td>Withdrawal</td>
+            <td>500.00 CHF</td>
+          </tr>
+          <tr>
+            <th scope="row">May 26, 2023</th>
+            <td>Transfer</td>
+            <td>2,000.00 CHF</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      <h2>Bill Payments</h2>
+      <form>
+        <div class="form-group">
+          <label for="payee">Payee</label>
+          <input type="text" class="form-control" id="payee" placeholder="Enter payee name">
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+          <label for="date">Payment Date</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
