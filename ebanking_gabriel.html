@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="header_footer.css"/>
+    <link href="style-dontclick.css" rel="stylesheet" type="text/css" />
+  </head>
+  <!--for hier könnte ihre werbung stehen center etc gpr-->
+    <style>
+      body {
+        background-color: white;
+      }
+      .form-container {
+        margin-top: 50px;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      .form-control {
+        border: 1px solid black;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+      .ad-box {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <body>
+<!-- The Header begins here alexI modified css by gpr -->
+<nav>
+  <div class="container">
+      <div class="row justify-content-center align-items-center">
+          <div class="col float-left header_logo">
+              <img src="/dreams_logo.png" class="logo">
+          </div>
+          <div class="col center header_title">
+              <h1 class="font-weight-bold display-1" style="font-size: 8vw;">DreamS</h1>
+              <p class="font-monospace small" style="font-size: 2vw;">Digital Banking Solutions</p>
+          </div>
+          <div class="col float-right header_menu">
+              <div class="dropdown">
+                  <a class="btn btn-primary btn-floating dropdown-toggle hidden-arrow bg-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-list"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuicon">
+                    <li><a class="dropdown-item" href="/aboutus_alex.html"><i class="bi bi-info-circle"></i> About Us</a></li>
+                    <li><a class="dropdown-item" href="/home_hira.html"><i class="bi bi-house"></i> Home</a></li>
+                    <li><a class="dropdown-item" href="/login_serafetim.html"><i class="bi bi-door-open"></i> Login</a></li>
+                    <li><a class="dropdown-item" href="/ebanking_gabriel.html"><i class="bi bi-coin"></i> eBanking</a></li>
+                    <li><a class="dropdown-item" href="/exchange_cyrill.html"><i class="bi bi-currency-exchange"></i> Exchange</a></li>
+                    <li><a class="dropdown-item" href="/contact_benjamin.html"><i class="bi bi-telephone"></i> Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+<!-- The Header ends here alexI modified css by gpr-->
+<!--content starts here gpr-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="ad-box">
+        <p class="text-center vertical-center">hier könnte ihre werbung stehen</p>
+        <button class="btn btn-primary btn-block mt-3" onclick="alert('Kontaktieren Sie uns!')">Contact</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-container">
+        <h2 class="text-center mb-4">Send</h2>
+        <form>
+            <div class="form-group mb-3">
+              <label for="contact-name">Contact Name</label>
+              <input type="text" class="form-control" id="contact-name" placeholder="Enter contact name or number">
+            </div>
+            <div class="form-group mb-3">
+              <label for="amount">Amount in CHF</label>
+              <input type="text" class="form-control" id="amount" placeholder="Enter amount in 00.00CHF">
+            </div>
+            <button style="position: relative;" onclick="alert('Es war nicht Bedingung, dass dieser Button funktioniert, aber danke fürs Ausprobieren! It was not a requirement that this button work, but thanks for trying!')">Send</button>
+            <!--javascript inline start gpr-->
+            <script>
+              $('button').on('mouseover', function() {
+            $(this).css({
+              top: (Math.random() * 100) + '%',
+              left: (Math.random() * 100) + '%'
+                });
+              });
+            </script>
+            <!--javascript inline end gpr-->
+          </form>
+          <hr>
+          <h4 class="text-center mb-4">Favorite contacts</h4>
+          <ul class="list-group">
+            <li class="list-group-item">Contact 1</li>
+            <li class="list-group-item">Contact 2</li>
+            <li class="list-group-item">Contact 3</li>
+          </ul>
+          <button type="button" class="btn btn-secondary btn-block mt-3" data-toggle="modal" data-target="#addContactModal" onclick="alert('Es war nicht Bedingung, dass dieser Button funktioniert, aber danke fürs Ausprobieren! It was not a requirement that this button work, but thanks for trying!')">Add Contact</button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="ad-box">
+          <p class="text-center vertical-center">hier könnte ihre werbung stehen</p>
+          <button class="btn btn-primary btn-block mt-3" onclick="alert('Kontaktieren Sie uns!')">Contact</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--prank start gpr-->                          <!--when prank starts footer is no longer at the bottom-->
+  <div class="everything">
+    <button id="button">Don’t click!!!!</button>
+    <audio controls hidden id="song">
+      <source src="roll.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+  <!--here i wanted to try js with external script start gpr-->
+  <script src="script-prank.js"></script>
+    <!--prank end gpr-->
+<!--content ends here gpr-->
+<!-- The Footer begins here alexI modified css by gpr-->
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col float-left text-start font-monospace">
+              <p class="font-monospace p_gabriel"></p>
+              <p class="font-monospace p_gabriel">Dreams</p>
+              <p class="font-monospace p_gabriel">Stützlitraum 1</p>
+              <p class="font-monospace p_gabriel">Postfach 8000 Zürich</p>
+          </div>
+          <div class="col float-right text-end font-monospace">
+              <p class="font-monospace p_gabriel"></p>
+              <p class="font-monospace p_gabriel">Digital Banking Solutions</p>
+              <p class="font-monospace p_gabriel">dreams@gmail.com</p>
+              <p class="font-monospace p_gabriel">+41 41 333 55 77</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- The Footer ends hhere alexI modified css by gpr-->
+ </div>
+</body>
+</html>
